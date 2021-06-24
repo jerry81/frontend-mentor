@@ -1,0 +1,26 @@
+.root {
+  background-image: url("./images/bg-pattern-top.svg");
+  height: 100%;
+  width: 100%;
+}
+
+.test1 {
+  background-image: url("./images/bg-pattern-bottom.svg");
+  height: 100%;
+  width: 100%;
+}
+
+
+.test2 {
+    background-image: url("./images/bg-pattern-card.svg");
+    height: 100%;
+    width: 100%;
+  }
+
+body {
+    height: 100%
+}
+
+html {
+    height: 100%; 
+}
