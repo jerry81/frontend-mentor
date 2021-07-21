@@ -11,24 +11,30 @@
 
 .work {
   width: 1440px;
-  height: 70%;
+  height: 720px;
   background-color: hsl(185, 75%, 39%);
-}
-
-.test1 {
-  background-image: url("./images/bg-pattern-bottom.svg");
-  height: 50%;
-  width: 50%;
   position:absolute;
-  right:0;
-  bottom: 0;
+}
+
+.bg1 {
+  background-image: url("./images/bg-pattern-top.svg");
+  height: 100%;
+  width: 50%;
+  background-repeat:no-repeat;
+  background-position-x: -260px;
+  background-position-y: -500px;
+  position:absolute;
 }
 
 
-.test2 {
-    background-image: url("./images/bg-pattern-card.svg");
+.bg2 {
+    background-image: url("./images/bg-pattern-bottom.svg");
     height: 100%;
-    width: 100%;
+    width: 50%;
+    position:absolute;
+    right: 0;
+    background-position-y:350px;
+    background-repeat:no-repeat;
   }
 
 body {
