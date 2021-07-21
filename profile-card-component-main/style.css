@@ -1,3 +1,8 @@
+body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .root {
   display: flex;
   justify-content: center;
@@ -14,6 +19,17 @@
   height: 720px;
   background-color: hsl(185, 75%, 39%);
   position:absolute;
+}
+
+.border {
+  /* Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%) */
+  border: 2px solid hsl(185, 75%, 39%);
+  border-radius: 8px;
 }
 
 .bg1 {
@@ -37,10 +53,14 @@
     background-repeat:no-repeat;
   }
 
-body {
-    height: 100%
-}
-
-html {
-    height: 100%; 
-}
+  .card {
+    height: 360px;
+    width: 360px;
+    background: white;
+    display: flex;
+    position:absolute;
+    z-index: 2;
+    margin-left: 540px;
+    margin-top: 180px;
+    box-shadow: hsl(0, 0%, 59%) 0px 5px 15px;
+  }
