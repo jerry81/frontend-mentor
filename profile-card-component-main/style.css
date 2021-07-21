@@ -12,69 +12,139 @@ body {
   font-size: 18px;
   font-weight: 400;
   font-family: "Kumbh Sans";
-}
-
-.root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
-.work {
-  width: 1440px;
-  height: 720px;
-  background-color: hsl(185, 75%, 39%);
-  position: absolute;
+@media only screen and (min-width: 1000px) {
+  .root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .work {
+    width: 1440px;
+    height: 720px;
+    background-color: hsl(185, 75%, 39%);
+    position: absolute;
+  }
+
+  .bg1 {
+    background-image: url("./images/bg-pattern-top.svg");
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position-x: -260px;
+    background-position-y: -500px;
+    position: absolute;
+  }
+
+  .bg2 {
+    background-image: url("./images/bg-pattern-bottom.svg");
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    background-position-y: 350px;
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    height: 360px;
+    width: 360px;
+    background: white;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin-left: 540px;
+    margin-top: 180px;
+    box-shadow: hsl(0, 0%, 59%) 0px 5px 15px;
+    background-image: url("./images/bg-pattern-card.svg");
+    background-repeat: repeat-x;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .work {
+    width: 375px;
+    height: 720px;
+    background-color: hsl(185, 75%, 39%);
+    position: absolute;
+  }
+
+  .bg1 {
+    background-image: url("./images/bg-pattern-top.svg");
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position-x: -260px;
+    background-position-y: -500px;
+    position: absolute;
+  }
+
+  .bg2 {
+    background-image: url("./images/bg-pattern-bottom.svg");
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    background-position-y: 350px;
+    background-repeat: no-repeat;
+  }
+
+  .card {
+    height: 350px;
+    width: 350px;
+    background: white;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin-left: 15px;
+    margin-top: 180px;
+    box-shadow: hsl(0, 0%, 59%) 0px 5px 15px;
+    background-image: url("./images/bg-pattern-card.svg");
+    background-repeat: repeat-x;
+  }
+
+  footer {
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .border {
-  /* Very dark desaturated blue: hsl(229, 23%, 23%)
-Dark grayish blue: hsl(227, 10%, 46%)
-
-### Neutral
-
-Dark gray: hsl(0, 0%, 59%) */
   border: 2px solid hsl(185, 75%, 39%);
   border-radius: 8px;
-}
-
-.bg1 {
-  background-image: url("./images/bg-pattern-top.svg");
-  height: 100%;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-position-x: -260px;
-  background-position-y: -500px;
-  position: absolute;
-}
-
-.bg2 {
-  background-image: url("./images/bg-pattern-bottom.svg");
-  height: 100%;
-  width: 50%;
-  position: absolute;
-  right: 0;
-  background-position-y: 350px;
-  background-repeat: no-repeat;
-}
-
-.card {
-  height: 360px;
-  width: 360px;
-  background: white;
-  display: flex;
-  position: absolute;
-  z-index: 2;
-  margin-left: 540px;
-  margin-top: 180px;
-  box-shadow: hsl(0, 0%, 59%) 0px 5px 15px;
-  background-image: url("./images/bg-pattern-card.svg");
-  background-repeat: repeat-x;
 }
 
 .card section {
@@ -115,20 +185,11 @@ Dark gray: hsl(0, 0%, 59%) */
   color: hsl(0, 0%, 59%);
 }
 
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  padding: 15px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer article{
+footer article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .smallest {
