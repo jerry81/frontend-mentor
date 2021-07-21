@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Kumbh Sans'; /*a name to be used later*/
+  src: url('https://fonts.google.com/specimen/Kumbh+Sans'); /*URL to font*/
+  src: url('./Kumbh_Sans/KumbhSans-Regular.ttf');
+}
+
 body {
   font-size: 18px;
   font-weight: 400;
+  font-family: 'Kumbh Sans';
 }
 
 .root {
