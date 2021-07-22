@@ -27,6 +27,10 @@
         font-family: "Inter";
         src: url("./fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
       }
+      @font-face {
+        font-family: "Lexend_Deca";
+        src: url("./fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+      }
       html {
         height: 100%;
         width: 100%;
@@ -40,7 +44,9 @@
         background-color: hsl(233, 47%, 7%);
         font-size: 15px;
       }
-
+      .scroller {
+        height: 100%;
+      }
       main {
         width: 385px;
         height: auto;
@@ -73,6 +79,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         padding: 40px;
+        padding-bottom: 10px;
       }
       .main div {
         color: hsl(0, 0%, 100%);
@@ -93,6 +100,20 @@
         font-weight: 400;
         color: hsla(0, 0%, 100%, 0.75);
       }
+      .bot .stat-label {
+        color: hsla(0, 0%, 100%, 0.6);
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-family: "Lexend_Deca";
+        font-weight: 400;
+      }
+      .bot {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -100,25 +121,35 @@
   </header>
   <nav>
   </nav> -->
-    <main role="main">
-      <div class="image">
-        <img src="./images/image-header-mobile.jpg" />
-        <div class="overlay"></div>
-      </div>
-      <div class="main">
-        <div>Get <span class="accent">insights </span>that</div>
-        <div>
-          help your business
+    <div class="scroller">
+      <main role="main">
+        <div class="image">
+          <img src="./images/image-header-mobile.jpg" />
+          <div class="overlay"></div>
         </div>
-        <div>
-          grow.
+        <div class="main">
+          <div>Get <span class="accent">insights </span>that</div>
+          <div>
+            help your business
+          </div>
+          <div>
+            grow.
+          </div>
+          <span class="desc">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </span>
+          <div class="bot">
+            <div>10k+</div>
+            <span class="stat-label">COMPANIES</span>
+            <div>314</div>
+            <span class="stat-label">TEMPLATES</span>
+            <div>12M+</div>
+            <span class="stat-label">QUERIES</span>
+          </div>
         </div>
-        <span class="desc">
-          Discover the benefits of data analytics and make better decisions
-          regarding revenue, customer experience, and overall efficiency.
-        </span>
-      </div>
-    </main>
+      </main>
+    </div>
     <!-- <footer>
 
   </footer> -->
