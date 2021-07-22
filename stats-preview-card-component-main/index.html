@@ -1,22 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Stats preview card component</title>
 
-  Get insights that help your business grow.
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /*       .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      } */
+      @font-face {
+        font-family: "Inter";
+        src: url("./");
+      }
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(233, 47%, 7%);
+      }
+
+      main {
+        width: 385px;
+        height: auto;
+        padding-bottom: 15px;
+        background-color: hsl(244, 38%, 16%);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+      }
+      img {
+        border-radius: 10px;
+        width: 385px;
+        height: 282.56px;
+      }
+      main .image {
+        width: 385px;
+        height: 282.56px;
+        position: relative;
+      }
+      .overlay {
+        width: 385px;
+        height: 282.56px;
+        position: absolute;
+        top: 0;
+        opacity: 0.5;
+        background-color: hsl(277deg 100% 36%);
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+      }
+      .main h2 {
+        color: hsl(0, 0%, 100%);
+      }
+      .accent {
+        color: hsl(277, 64%, 61%);
+      }
+    </style>
+  </head>
+  <body>
+    <!--   <header>
+  </header>
+  <nav>
+  </nav> -->
+    <main role="main">
+      <div class="image">
+        <img src="./images/image-header-mobile.jpg" />
+        <div class="overlay"></div>
+      </div>
+      <div class="main">
+        <h2>
+          Get <span class="accent">insights </span>that help your business grow.
+        </h2>
+      </div>
+    </main>
+    <!-- <footer>
+
+  </footer> -->
+    <!-- Get insights that help your business grow.
 
   Discover the benefits of data analytics and make better decisions regarding revenue, customer 
   experience, and overall efficiency.
@@ -28,6 +111,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
