@@ -16,10 +16,22 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      /* fonts */
+      @font-face {
+        font-family: "BSDBold";
+        src: url("./fonts/Big_Shoulders_Display/BigShouldersDisplay-Bold.ttf");
+      }
+      @font-face {
+        font-family: "Lexend_Deca";
+        src: url("./fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+      }
       /* mobile */
       html {
         height: 100%;
         width: 100%;
+        font-size: 15px;
+        font-family: 'Lexend_Deca';
+        font-weight: 400;
       }
       body {
         height: 100%;
@@ -59,6 +71,9 @@
       .title {
         color: white;
         margin-bottom: 30px;
+        font-family:'BSDBold';
+        font-weight: 700;
+        font-size: 30px;
       }
       .desc {
         color: white;
@@ -83,7 +98,7 @@
     </header>
     <main>
       <div style="background-color: hsl(31, 77%, 52%)">
-        <img alt="sedans" loading="lazy" src="images/icon-sedans.svg"/>
+        <img alt="sedans" loading="lazy" src="images/icon-sedans.svg" />
         <span class="title">SEDANS</span>
         <span class="desc"
           >Choose a sedan for its affordability and excellent fuel economy.
