@@ -34,9 +34,9 @@
         font-weight: 400;
       }
       body {
-        height: 100%;
         width: 100%;
         overflow-y: scroll;
+        padding-bottom:40px;
       }
       main {
         width: 375px;
@@ -47,11 +47,19 @@
         border-radius: 10px;
       }
       main div {
-        border-radius: 10px;
         width: calc(375px - 140px);
         padding: 70px;
         display: flex;
         flex-direction: column;
+      }
+
+      main div:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      main div:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
       }
       main div img {
         width: 70px;
@@ -89,6 +97,11 @@
         border-radius: 50px;
         font-family: 'Lexend_Deca';
         font-size: 15px;
+      }
+      button:active {
+        background: transparent;
+        color: white !important;
+        border: 2px solid white;
       }
 
       /* desktop */
