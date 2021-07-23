@@ -19,7 +19,7 @@
       /* fonts */
       @font-face {
         font-family: "BSDBold";
-        src: url("./fonts/Big_Shoulders_Display/BigShouldersDisplay-Bold.ttf");
+        src: url("./fonts/Big_Shoulders_Display/BigShouldersDisplay-Regular.ttf");
       }
       @font-face {
         font-family: "Lexend_Deca";
@@ -48,14 +48,14 @@
       }
       main div {
         border-radius: 10px;
-        width: 375px;
-        padding: 40px 30px;
+        width: calc(375px - 140px);
+        padding: 70px;
         display: flex;
         flex-direction: column;
       }
       main div img {
-        width: 80px;
-        margin-bottom: 30px;
+        width: 70px;
+        margin-bottom: 50px;
       }
       .attribution {
         position: fixed;
@@ -70,12 +70,14 @@
       }
       .title {
         color: white;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         font-family:'BSDBold';
         font-weight: 700;
-        font-size: 30px;
+        font-size: 45px;
+        transform: scale(1.4, 1) translateX(30px)
       }
       .desc {
+        line-height: 30px;
         color: white;
       }
 
@@ -106,6 +108,7 @@
         >
       </div>
       <div style="background-color:hsl(184, 100%, 22%)">
+          <img alt="suvs" loading="lazy" src="images/icon-suvs.svg" />
         <span class="title">SUVS</span>
         <span class="desc">
           Take an SUV for its spacious interior, power, and versatility. Perfect
@@ -113,6 +116,7 @@
         </span>
       </div>
       <div style="background-color: hsl(179, 100%, 13%)">
+          <img alt="luxury" loading="lazy" src="images/icon-luxury.svg" />
         <span class="title">LUXURY</span>
         <span class="desc">
           Cruise in the best car brands without the bloated prices. Enjoy the
