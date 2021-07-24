@@ -33,7 +33,7 @@
         width: 100%;
         font-family: "Kumbh Sans";
         font-size: 12px;
-        color:  hsl(237, 12%, 33%);
+        color: hsl(237, 12%, 33%);
       }
 
       h1 {
@@ -119,13 +119,14 @@
         width: 12px;
       }
 
-      .accordion:active, .accordion:hover {
+      .accordion:active,
+      .accordion:hover {
         color: hsl(31, 77%, 52%);
         cursor: pointer;
       }
 
       .accordion:active {
-        transform: scale(1.05)
+        transform: scale(1.05);
       }
 
       .accordion[data-expanded="true"] .acc-t img {
@@ -161,6 +162,56 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+
+      .woman-desk {
+        display: none;
+      }
+
+      .pattern-desk {
+        display: none;
+      }
+
+      /* desktop */
+      @media only screen and (min-width: 800px) {
+        .woman-desk {
+          display: block;
+        }
+
+        .pattern-desk {
+          display: block;
+        }
+        .woman-mob {
+          display: none;
+        }
+
+        .pattern-mob {
+          display: none;
+        }
+
+        body {
+          height: 100%;
+          width: 100%;
+          background: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        main {
+        width: 1440px;
+        height: 720px;
+        background-image: linear-gradient(
+          to bottom,
+          hsl(273, 75%, 66%),
+          hsl(240, 73%, 65%)
+        );
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        overflow-y: scroll;
+      }
+      }
     </style>
   </head>
   <body>
@@ -175,6 +226,17 @@
         class="pattern-mob"
         src="./images/bg-pattern-mobile.svg"
         alt="pattern"
+      />
+      <img
+        class="woman-desk"
+        src="./images/illustration-woman-online-desktop.svg"
+        alt="woman-desktop"
+      />
+      <img
+        style="top: 140px; margin-left: 0"
+        class="pattern-desk"
+        src="./images/bg-pattern-desktop.svg"
+        alt="pattern-desktop"
       />
       <section>
         <h1>FAQ</h1>
