@@ -32,10 +32,12 @@
         height: 100%;
         width: 100%;
         font-family: "Kumbh Sans";
+        font-size: 12px;
       }
 
       h1 {
         font-family: "Kumbh Sans Bold";
+        font-size: 30px;
       }
 
       body {
@@ -88,12 +90,39 @@
         width: calc(90% - 60px);
         background: white;
         border-radius: 15px;
-        padding: 100px 30px 30px 30px;
+        padding: 120px 15px 40px 15px;
         height: auto;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+      .accordion {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+      }
+
+      .acc-t{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .acc-t img {
+        position: relative;
+        margin-left: 0;
+        top: 0;
+        margin-right: 5px;
+        height: 10px;
+        width: 12px;
+      }
+
+      .acc-t span {
+        margin-left: 5px;
+      }
+
+      .acc-b {
+        display:none;
       }
 
       .attribution {
@@ -122,10 +151,19 @@
       />
       <section>
         <h1>FAQ</h1>
+        <div class="accordion">
+          <div class="acc-t">
+            <span>How many team members can I invite?</span>
+            <img src="./images/icon-arrow-down.svg" alt="down" />
+          </div>
+          <div class="acc-b">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </div>
+        </div>
       </section>
     </main>
-    <!--  How many team members can I invite? You can invite up to 2 additional users
-    on the Free plan. There is no limit on team members for the Premium plan.
+    <!--  
     What is the maximum file upload size? No more than 2GB. All files in your
     account must fit your allotted storage space. How do I reset my password?
     Click “Forgot password” from the login page or “Change password” from your
@@ -133,12 +171,12 @@
     subscription? Yes! Send us a message and we’ll process your request no
     questions asked. Do you provide additional support? Chat and email support
     is available 24/7. Phone lines are open during normal business hours. -->
-    <!-- 
+
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer> -->
+      >. Coded by <a href="https://github.com/jerry81">Jerry</a>.
+    </footer>
   </body>
 </html>
