@@ -74,6 +74,7 @@
         align-items: center;
         flex-direction: column;
         position: relative;
+        overflow-y: scroll;
       }
 
       main img {
@@ -103,7 +104,7 @@
         border-bottom: 1px solid hsl(240, 5%, 91%);
       }
 
-      .acc-t{
+      .acc-t {
         display: flex;
         justify-content: space-between;
       }
@@ -118,7 +119,7 @@
       }
 
       .accordion[data-expanded="true"] .acc-t img {
-        transform: rotate(180deg)
+        transform: rotate(180deg);
       }
 
       .acc-t span {
@@ -127,17 +128,17 @@
 
       .accordion[data-expanded="true"] .acc-t span {
         font-weight: 700;
-        font-family: 'Kumbh Sans Bold'
+        font-family: "Kumbh Sans Bold";
       }
 
       .acc-b {
-        display:none;
+        display: none;
       }
 
       .accordion[data-expanded="true"] .acc-b {
         display: block;
         text-align: left;
-        margin: 15px 35px 0 5px;;
+        margin: 15px 35px 0 5px;
       }
 
       .attribution {
@@ -176,17 +177,48 @@
             no limit on team members for the Premium plan.
           </div>
         </div>
+        <div class="accordion" onclick="handleAccordionClick(event)">
+          <div class="acc-t">
+            <span>What is the maximum file upload size?</span>
+            <img src="./images/icon-arrow-down.svg" alt="down" />
+          </div>
+          <div class="acc-b">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </div>
+        </div>
+        <div class="accordion" onclick="handleAccordionClick(event)">
+          <div class="acc-t">
+            <span>How do I reset my password?</span>
+            <img src="./images/icon-arrow-down.svg" alt="down" />
+          </div>
+          <div class="acc-b">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </div>
+        </div>
+        <div class="accordion" onclick="handleAccordionClick(event)">
+          <div class="acc-t">
+            <span>Can I cancel my subscription?</span>
+            <img src="./images/icon-arrow-down.svg" alt="down" />
+          </div>
+          <div class="acc-b">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </div>
+        </div>
+        <div class="accordion" onclick="handleAccordionClick(event)">
+          <div class="acc-t">
+            <span>Do you provide additional support? </span>
+            <img src="./images/icon-arrow-down.svg" alt="down" />
+          </div>
+          <div class="acc-b">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </div>
+        </div>
       </section>
     </main>
-    <!--  
-    What is the maximum file upload size? No more than 2GB. All files in your
-    account must fit your allotted storage space. How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your
-    profile page. A reset link will be emailed to you. Can I cancel my
-    subscription? Yes! Send us a message and we’ll process your request no
-    questions asked. Do you provide additional support? Chat and email support
-    is available 24/7. Phone lines are open during normal business hours. -->
-
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -196,11 +228,11 @@
   </body>
   <script>
     function handleAccordionClick(ev) {
-      const accord = ev.currentTarget
+      const accord = ev.currentTarget;
       if (accord.dataset.expanded) {
-        delete accord.dataset.expanded
+        delete accord.dataset.expanded;
       } else {
-        accord.dataset.expanded = true
+        accord.dataset.expanded = true;
       }
     }
   </script>
