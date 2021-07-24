@@ -33,6 +33,7 @@
         width: 100%;
         font-family: "Kumbh Sans";
         font-size: 12px;
+        color:  hsl(237, 12%, 33%);
       }
 
       h1 {
@@ -118,6 +119,15 @@
         width: 12px;
       }
 
+      .accordion:active, .accordion:hover {
+        color: hsl(31, 77%, 52%);
+        cursor: pointer;
+      }
+
+      .accordion:active {
+        transform: scale(1.05)
+      }
+
       .accordion[data-expanded="true"] .acc-t img {
         transform: rotate(180deg);
       }
@@ -139,6 +149,7 @@
         display: block;
         text-align: left;
         margin: 15px 35px 0 5px;
+        color: hsl(240, 6%, 50%);
       }
 
       .attribution {
