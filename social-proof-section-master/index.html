@@ -14,18 +14,94 @@
 
     <title>Frontend Mentor | Social proof section</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍
+    
+    Very Dark Magenta: hsl(300, 43%, 22%)
+    Soft Pink: hsl(333, 80%, 67%)
+    
+    Dark Grayish Magenta: hsl(303, 10%, 53%)
+    Light Grayish Magenta: hsl(300, 24%, 96%)
+
+
+- Weights: 400, 500, 700-->
     <style>
+      @font-face {
+        font-family: "Spartan";
+        src: url("../sharedfonts/Spartan/Spartan-VariableFont_wght.ttf");
+      }
+      @font-face {
+        font-family: "Spartan Bold";
+        src: url("../sharedfonts/Spartan/static/Spartan-Bold.ttf");
+      }
+      html {
+        font-family: "Spartan";
+        font-size: 15px;
+      }
+
+      body {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+      }
+
+      main {
+        position: relative;
+        width: 375px;
+        background: white;
+      }
+
+      .top {
+        position: absolute;
+        top: 0;
+      }
+
+      .bot {
+        position: absolute;
+        bottom: 0;
+      }
+
       .attribution {
+        position: fixed;
+        bottom: 0;
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      main header {
+        display: flex;
+        margin: 60px 30px 30px 30px;
+        text-align: center;
+      }
+
+      h1 {
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        font-family: 'Spartan Bold';
+      }
     </style>
   </head>
   <body>
+    <main>
+      <img
+        class="top"
+        alt="bg-top-mobile"
+        src="./images/bg-pattern-top-mobile.svg"
+      />
+      <img
+        class="bot"
+        alt="bg-bot-mobile"
+        src="./images/bg-pattern-bottom-mobile.svg"
+      />
+      <header>
+        <h1>10,000+ of our users love our products.</h1>
+      </header>
+    </main>
+    <!-- 
     10,000+ of our users love our products.
 
     We only provide great products combined with excellent customer service.
@@ -50,7 +126,7 @@
     Verified Buyer
     "Put an order with this company and can only praise them for the very high
     standard. Will definitely use them again and recommend them to everyone!"
-
+ -->
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
