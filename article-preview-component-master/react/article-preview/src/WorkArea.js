@@ -60,7 +60,7 @@ function WorkArea() {
     );
   }
   function Footer() {
-    return !sharing ? (
+    return !sharing || dsk ? (
       <footer className="foot">
         <div className="left">
           <img className="face" src={michelle} alt="michelle" />
