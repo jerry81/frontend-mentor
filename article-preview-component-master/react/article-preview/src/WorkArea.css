@@ -1,0 +1,36 @@
+/* mobile first */
+
+.work {
+  background: hsl(210, 46%, 95%);
+  display: flex;
+}
+
+.d-work {
+  flex-direction: row;
+}
+
+.m-work {
+  flex-direction: column;
+  width: 330px;
+}
+
+img {
+  margin-bottom: 15px;
+}
+
+@font-face {
+    font-family: "Manrope-B";
+    src: url("./fonts/Manrope/static/Manrope-Bold.ttf");
+}
+
+.bold {
+  font-weight: 700;
+  margin: 30px 42px;
+  line-height: 24px;
+  font-family: "Manrope-B";
+  font-size: 15px;
+}
+
+.light {
+  margin: 0 42px 30px 42px;
+}

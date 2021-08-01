@@ -1,5 +1,6 @@
 import "./App.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import WorkArea from './WorkArea.js'
 
 function App() {
   /* styles */
@@ -9,19 +10,10 @@ function App() {
   const innerPanel = useMediaQuery("(min-width:600px)")
   ? "inner d-inner"
   : "inner m-inner";
-  /* widgets */
-  function boldText() {
-    return (
-      <div>
-        Shift the overall look and feel by adding these wonderful touches to
-        furniture in your home
-      </div>
-    );
-  }
   /* render */
   return <div className={appStyle}>
     <div className={innerPanel}>
-
+      <WorkArea/>
     </div>
   </div>;
 }
