@@ -75,3 +75,40 @@ img {
 .share {
   margin: 0;
 }
+
+.share-text {
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 4px;
+}
+
+.active {
+  display: flex;
+  flex-direction: row;
+  background: hsl(217, 19%, 35%);
+  justify-content: space-between;
+  align-items:center;
+  height: 75px;
+}
+
+.shareBorderA {
+  padding: 10px;
+  background:hsl(214, 17%, 51%);
+  border-radius: 50px;
+  margin-right: 42px;
+}
+
+.leftA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 42px;
+}
+
+.shareIcon {
+  margin: 8px;
+}
+
+.shareIcons {
+  display: flex;
+  margin-left: 15px;
+}

@@ -3,8 +3,14 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import drawers from "./images/drawers.jpg";
 import michelle from "./images/avatar-michelle.jpg";
 import share from "./images/icon-share.svg";
+import active from './images/icon-active.svg'
+import fb from './images/icon-facebook.svg';
+import pin from './images/icon-pinterest.svg';
+import twitter from './images/icon-twitter.svg';
+import { useState } from "react";
 
 function WorkArea() {
+  const [sharing, setSharing] = useState(false);
   /* styles */
   const workStyle = useMediaQuery("(min-width:600px)")
     ? "work d-work"
@@ -27,6 +33,23 @@ function WorkArea() {
       </div>
     );
   }
+  function Active() {
+    return (
+      <footer className="active">
+        <div className="leftA">
+          <span className="share-text">SHARE</span>
+          <div className="shareIcons">
+          <img className="shareIcon" src={fb} alt="michelle" />
+          <img className="shareIcon" src={twitter} alt="michelle" />
+          <img className="shareIcon" src={pin} alt="michelle" />
+          </div>
+        </div>
+        <div className="shareBorderA" onClick={toggleActive}>
+          <img className="share" src={active} alt="share" />
+        </div>
+      </footer>
+    );
+  }
   function Profile() {
     return (
       <div className="profile">
@@ -36,17 +59,23 @@ function WorkArea() {
     );
   }
   function Footer() {
-    return (
+    return !sharing ? (
       <footer className="foot">
         <div className="left">
           <img className="face" src={michelle} alt="michelle" />
           <Profile />
         </div>
-        <div className="shareBorder">
+        <div className="shareBorder" onClick={toggleActive}>
           <img className="share" src={share} alt="share" />
         </div>
       </footer>
+    ) : (
+      <Active />
     );
+  }
+  /* methods */
+  function toggleActive() {
+    setSharing(!sharing);
   }
 
   /* render */
