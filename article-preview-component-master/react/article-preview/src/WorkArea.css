@@ -9,11 +9,20 @@
 
 .d-work {
   flex-direction: row;
+  width: 800px;
+  height: 350px;
 }
 
 .m-work {
   flex-direction: column;
   width: 330px;
+}
+
+.drawers {
+  height: 350px;
+  width: auto;
+  margin-bottom: 0;
+  clip: rect(0, 350px, 350px, 0);
 }
 
 img {
@@ -111,4 +120,11 @@ img {
 .shareIcons {
   display: flex;
   margin-left: 15px;
+}
+
+.nonImage {
+  width: 647.5px;
+  padding: 30px;
+  margin-left:-85px;
+  background: white;
 }

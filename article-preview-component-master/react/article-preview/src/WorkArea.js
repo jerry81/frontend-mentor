@@ -3,18 +3,19 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import drawers from "./images/drawers.jpg";
 import michelle from "./images/avatar-michelle.jpg";
 import share from "./images/icon-share.svg";
-import active from './images/icon-active.svg'
-import fb from './images/icon-facebook.svg';
-import pin from './images/icon-pinterest.svg';
-import twitter from './images/icon-twitter.svg';
+import active from "./images/icon-active.svg";
+import fb from "./images/icon-facebook.svg";
+import pin from "./images/icon-pinterest.svg";
+import twitter from "./images/icon-twitter.svg";
 import { useState } from "react";
 
 function WorkArea() {
   const [sharing, setSharing] = useState(false);
   /* styles */
-  const workStyle = useMediaQuery("(min-width:600px)")
-    ? "work d-work"
-    : "work m-work";
+  const dsk = useMediaQuery("(min-width:600px)");
+  const workStyle = dsk ? "work d-work" : "work m-work";
+  const drawersC = dsk ? "drawers" : "";
+  const nonImage = dsk ? "nonImage" : "";
   /* widgets */
   function BoldText() {
     return (
@@ -39,9 +40,9 @@ function WorkArea() {
         <div className="leftA">
           <span className="share-text">SHARE</span>
           <div className="shareIcons">
-          <img className="shareIcon" src={fb} alt="michelle" />
-          <img className="shareIcon" src={twitter} alt="michelle" />
-          <img className="shareIcon" src={pin} alt="michelle" />
+            <img className="shareIcon" src={fb} alt="michelle" />
+            <img className="shareIcon" src={twitter} alt="michelle" />
+            <img className="shareIcon" src={pin} alt="michelle" />
           </div>
         </div>
         <div className="shareBorderA" onClick={toggleActive}>
@@ -81,10 +82,12 @@ function WorkArea() {
   /* render */
   return (
     <div className={workStyle}>
-      <img src={drawers} alt="drawers" />
-      <BoldText />
-      <Light />
-      <Footer />
+      <img src={drawers} alt="drawers" className={drawersC} />
+      <div className={nonImage}>
+        <BoldText />
+        <Light />
+        <Footer />
+      </div>
     </div>
   );
 }
