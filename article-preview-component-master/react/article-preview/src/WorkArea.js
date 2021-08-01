@@ -1,6 +1,8 @@
 import "./WorkArea.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import drawers from "./images/drawers.jpg";
+import michelle from './images/avatar-michelle.jpg'
+import share from './images/icon-share.svg'
 
 function WorkArea() {
   /* styles */
@@ -25,6 +27,23 @@ function WorkArea() {
       </div>
     );
   }
+  function Profile() {
+    return (
+      <div className="profile">
+        <span className="name">Michelle Appleton</span>
+        <span>28 Jun 2020</span>
+      </div>
+    )
+  }
+  function Footer() {
+    return (
+      <footer className="foot">
+        <img src={michelle} alt="michelle"/>
+        <Profile />
+        <img src={share} alt="share"/>
+      </footer>
+    )
+  }
 
   /* render */
   return (
@@ -32,6 +51,7 @@ function WorkArea() {
       <img src={drawers} alt="drawers" />
       <BoldText />
       <Light/>
+      <Footer />
     </div>
   );
 }
