@@ -1,16 +1,56 @@
 /* mobile first */
 
-.App {
-  text-align: center;
-  font-size: 13px;
-  font-family: "Manrope";
-  
+/* - Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+*/
+
+.very-dark-grayish-blue {
+  color: hsl(217, 19%, 35%);
 }
 
-.d-app{
-  color: red;
+.desaturated-dark-blue {
+  color: hsl(214, 17%, 51%);
+}
+
+.grayish-blue {
+  color: hsl(212, 23%, 69%);
+}
+
+.light-grayish-blue {
+  color: hsl(210, 46%, 95%);
+}
+
+.d-app {
+  background: white;
 }
 
 .m-app {
-  color: green;
+  background-color: #333;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  background: hsl(212, 23%, 69%);
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.d-inner {
+  width: 1440px;
+}
+
+.m-inner {
+  width: 375px;
 }
