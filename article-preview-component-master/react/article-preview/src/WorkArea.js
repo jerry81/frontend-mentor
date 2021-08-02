@@ -19,7 +19,6 @@ function WorkArea() {
   const drawersC = dsk ? "drawers" : "";
   const nonImage = dsk ? "nonImage" : "";
   const popupStyle = {
-    position: 'absolute',
     left: popupX,
     top: popupY
   }
@@ -82,7 +81,9 @@ function WorkArea() {
   }
   function SharePopup() {
     return sharing && (
-      <div style={popupStyle}></div>
+      <div className='popup' style={popupStyle}>
+        <Active/>
+      </div>
     );
   }
   function Footer() {
@@ -101,8 +102,8 @@ function WorkArea() {
   }
   /* methods */
   function toggleActive(ev) {
-    setPopupX(ev.clientX);
-    setPopupY(ev.clientY)
+    setPopupX(ev.clientX - 150);
+    setPopupY(ev.clientY - 100)
     setSharing(!sharing);
   }
 

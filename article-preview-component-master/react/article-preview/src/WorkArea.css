@@ -128,3 +128,7 @@ img {
   margin-left:-85px;
   background: white;
 }
+
+.popup {
+  position: absolute;
+}
