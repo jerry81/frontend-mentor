@@ -7,15 +7,24 @@ import active from "./images/icon-active.svg";
 import fb from "./images/icon-facebook.svg";
 import pin from "./images/icon-pinterest.svg";
 import twitter from "./images/icon-twitter.svg";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function WorkArea() {
   const [sharing, setSharing] = useState(false);
+  const [popupX, setPopupX] = useState(0)
+  const [popupY, setPopupY] = useState(0)
   /* styles */
   const dsk = useMediaQuery("(min-width:600px)");
   const workStyle = dsk ? "work d-work" : "work m-work";
   const drawersC = dsk ? "drawers" : "";
   const nonImage = dsk ? "nonImage" : "";
+  const popupStyle = {
+    position: 'absolute',
+    left: popupX,
+    top: popupY
+  }
+  /* refs */
+  const shareButton = useRef(null);
   /* widgets */
   function BoldText() {
     return (
@@ -59,6 +68,23 @@ function WorkArea() {
       </div>
     );
   }
+  function ShareBorder() {
+    return (
+      <div
+        className="shareBorder"
+        ref={shareButton}
+        onClick={toggleActive}
+        aria-describedby="popover"
+      >
+        <img className="share" src={share} alt="share" />
+      </div>
+    );
+  }
+  function SharePopup() {
+    return sharing && (
+      <div style={popupStyle}></div>
+    );
+  }
   function Footer() {
     return !sharing || dsk ? (
       <footer className="foot">
@@ -66,18 +92,20 @@ function WorkArea() {
           <img className="face" src={michelle} alt="michelle" />
           <Profile />
         </div>
-        <div className="shareBorder" onClick={toggleActive}>
-          <img className="share" src={share} alt="share" />
-        </div>
+        <ShareBorder />
+        <SharePopup />
       </footer>
     ) : (
       <Active />
     );
   }
   /* methods */
-  function toggleActive() {
+  function toggleActive(ev) {
+    setPopupX(ev.clientX);
+    setPopupY(ev.clientY)
     setSharing(!sharing);
   }
+
 
   /* render */
   return (
