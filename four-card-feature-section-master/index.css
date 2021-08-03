@@ -105,15 +105,15 @@ h4 {
 }
 
 article span {
-    color: hsl(229, 6%, 66%);
-    margin: 0 20px;
+  color: hsl(229, 6%, 66%);
+  margin: 0 20px;
 }
 
 article img {
-    display: flex;
-    width: 60px;
-    margin: 20px;
-    align-self: flex-end;
+  display: flex;
+  width: 60px;
+  margin: 20px;
+  align-self: flex-end;
 }
 
 /* desktop */
@@ -123,5 +123,34 @@ article img {
   }
   main {
     width: 1440px;
+    height: 900px;
+  }
+  .articles {
+      height: 593px;
+      width: 1440px;
+    position: relative;
+  }
+  h3 {
+    width: 420px;
+  }
+  .d-top {
+    position: absolute;
+    top: 0;
+    left: 545px;
+  }
+  .d-left {
+    position: absolute;
+    top: 150px;
+    left: 175px;
+  }
+  .d-right {
+    position: absolute;
+    right: 175px;
+    top: 150px;
+  }
+  .d-bot {
+    position: absolute;
+    bottom: 50px;
+    left: 545px;
   }
 }
