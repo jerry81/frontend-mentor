@@ -94,6 +94,7 @@ article {
   flex-direction: column;
   margin-bottom: 24px;
   border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 h4 {
