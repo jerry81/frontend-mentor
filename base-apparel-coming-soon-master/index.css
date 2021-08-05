@@ -14,13 +14,18 @@
 */
 
 @font-face {
-    font-family: 'Josefin Sans';
-    font-weight: 300, 400, 600;
-    src: url("../sharedfonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+  font-family: "Josefin Sans";
+  font-weight: 300, 400, 600;
+  src: url("../sharedfonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: "Josefin Thin";
+    src: url("../sharedfonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf");
+  }
+
 body {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-size: 16px;
   height: 100%;
   width: 100%;
@@ -31,12 +36,104 @@ body {
   background-color: #333;
 }
 
+footer {
+    position: fixed;
+    bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    margin: 30px;
+    width: 80px;
+    height: auto;
+}
+
 main {
-    width: 375px;
+  width: 375px;
+  background: white;
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(135deg,hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.pink {
+    /* 
+    hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+    */
+    color: hsl(0, 36%, 70%);
+    line-height: 28px;
+    margin: 0 20px 60px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Josefin Thin";
+    margin-top: 60px;
+    color:  hsl(0, 36%, 70%);
+    letter-spacing: 8px;
+    margin-block-end: 0;
+}
+
+h2 {
+    margin-top: 8px;
+    font-size: 48px;
+    letter-spacing: 8px;
+}
+
+.herom {
+  display: inline;
+}
+.herod {
+  display: none;
+}
+
+.email {
+    width: 320px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.email input {
+    width: 290px;
+    border-radius: 30px;
+    padding: 8px 16px;
+    border: 1px solid hsl(0, 36%, 70%);
+}
+
+.email .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 30px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    margin-left: -40px;
+}
+
+.email input::placeholder {
+    color: hsl(0, 36%, 70%);
 }
 
 /* desktop */
 @media only screen and (min-width: 800px) {
-    body { background-color: #ccc;}
-    main { width: 1440px; }
+  body {
+    background-color: #ccc;
+  }
+  main {
+    width: 1440px;
+  }
+  .herod {
+    display: inline;
+  }
+  .herom {
+    display: none;
+  }
 }
