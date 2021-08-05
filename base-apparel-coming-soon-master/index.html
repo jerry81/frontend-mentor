@@ -30,7 +30,6 @@
       <img src="./images/logo.svg" class="logo" alt="logo" />
       <img src="./images/hero-desktop.jpg" class="herod" alt="herod" />
       <img src="./images/hero-mobile.jpg" class="herom" alt="herom" />
-      <img src="./images/icon-error.svg" class="error hidden" alt="error" />
       <h1>WE'RE</h1>
       <h2>COMING SOON</h2>
       <div class="pink">
@@ -39,11 +38,18 @@
         launch deals.
       </div>
       <div class="email">
-        <input placeholder="Email Address" />
-        <div class="wrapper">
+        <input placeholder="Email Address" id="in" />
+        <img
+          src="./images/icon-error.svg"
+          class="error"
+          alt="error"
+          id="error"
+        />
+        <div class="wrapper" onclick="handleClick(event)">
           <img src="./images/icon-arrow.svg" class="arrow" alt="arrow" />
         </div>
       </div>
+      <div class="validation">Please provide a valid email</div>
     </main>
 
     <footer>
@@ -55,4 +61,26 @@
       </p>
     </footer>
   </body>
+  <script>
+    function handleClick(ev) {
+      const but = ev.currentTarget;
+      const error = document.querySelector("#error");
+      const val = document.querySelector(".validation");
+      if (but.dataset.act) {
+        delete but.dataset.act;
+      } else {
+        but.dataset.act = true;
+      }
+      if (error.dataset.act) {
+        delete error.dataset.act;
+      } else {
+        error.dataset.act = true;
+      }
+      if (val.dataset.act) {
+        delete val.dataset.act;
+      } else {
+        val.dataset.act = true;
+      }
+    }
+  </script>
 </html>
