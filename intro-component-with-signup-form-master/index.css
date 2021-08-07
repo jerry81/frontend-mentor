@@ -19,19 +19,19 @@
 - Weights: 400, 500, 600, 700
 */
 
+@font-face {
+    font-family: "Poppins";
+    src: url("../sharedfonts/Poppins/Poppins-Black.ttf");
+  }
+  
+  @font-face {
+    font-family: "PoppinsB";
+    src: url("../sharedfonts/Poppins/Poppins-Bold.ttf");
+  }
 
 body {
     font-size:  16px;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../sharedfonts/Poppins/Poppins-Black.ttf");
-}
-
-@font-face {
-  font-family: "PoppinsB";
-  src: url("../sharedfonts/Poppins/Poppins-Bold.ttf");
+    font-family: "Poppins";
 }
 
 /* desktop */
