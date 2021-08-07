@@ -1,0 +1,39 @@
+/*
+
+- Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+*/
+
+
+body {
+    font-size:  16px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../sharedfonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: "PoppinsB";
+  src: url("../sharedfonts/Poppins/Poppins-Bold.ttf");
+}
+
+/* desktop */
+@media only screen and (min-width: 800px) {
+}
