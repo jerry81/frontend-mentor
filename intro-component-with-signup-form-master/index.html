@@ -55,7 +55,7 @@
             <input placeholder="Password" />
             <span class="vtext">Field cannot be empty</span>
           </div>
-          <button>CLAIM YOUR FREE TRIAL</button>
+          <button onclick="handleButtonClick()">CLAIM YOUR FREE TRIAL</button>
           <div class="tac">
             By clicking the button, you are agreeing to our Terms and Services
             <span class="tas">Terms and Services</span>
@@ -72,4 +72,21 @@
       </p>
     </footer>
   </body>
+  <script>
+    function applyV(s) {
+      s.forEach(el => {
+        if (el.dataset.v) {
+          delete el.dataset.v;
+        } else {
+          el.dataset.v = true;
+        }
+      });
+    }
+    function handleButtonClick() {
+      const allVtexts = document.querySelectorAll(".vtext");
+      const inputs = document.querySelectorAll('.login input')
+      const els = [allVtexts, inputs]
+      els.forEach(applyV);
+    }
+  </script>
 </html>
