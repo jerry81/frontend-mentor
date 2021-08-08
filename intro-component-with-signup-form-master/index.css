@@ -93,6 +93,7 @@ h1 {
   padding: 15px;
   font-family: "PoppinsB";
   background: none;
+  border: #ccc 1px solid;
 }
 
 .login input[data-v="true"] {
@@ -162,4 +163,40 @@ footer {
 
 /* desktop */
 @media only screen and (min-width: 800px) {
+    body {
+        background: white;
+    }
+    main {
+        width: 1440px;
+        height: 800px;
+        flex-direction: row;
+        display: flex;
+    }
+    section {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 48px;
+        margin-left: 200px;
+        margin-top: 0;
+    }
+
+    h2 {
+        width: 395px;
+    }
+
+    .login {
+        width: 450px;
+    }
+    .intro {
+        text-align: left;
+    }
+
+    .intro span {
+        margin-left: 200px;
+    }
 }
