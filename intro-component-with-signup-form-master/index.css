@@ -90,6 +90,13 @@ h1 {
     margin-right: 20px;
     margin-top: 20px;
     padding: 15px;
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: right;
+}
+
+.input-c {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -121,6 +128,16 @@ footer {
 .tas {
     color: hsl(0, 100%, 74%);
     font-family: "PoppinsB"
+}
+
+.vtext {
+    color: hsl(0, 100%, 74%);
+    font-family: "Poppins";
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 12px;
 }
 
 /* desktop */
