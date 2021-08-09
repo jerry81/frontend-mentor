@@ -45,3 +45,8 @@ The designs were created to the following widths:
 body {
     font-family: 'Karla'
 }
+
+footer {
+    position: fixed;
+    bottom: 15px;
+}
