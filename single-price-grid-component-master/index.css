@@ -147,6 +147,7 @@ h3 {
 .bot span {
     margin-left: 24px;
     margin-bottom: 32px;
+    line-height: 24px;
 }
 
 .right span {
@@ -181,5 +182,24 @@ h3 {
     .top span {
         margin-left: 48px;
         margin-right: 96px;
+        margin-bottom: 48px;
+    }
+
+    .price {
+        margin-left: 48px;
+    }
+
+    .bot span {
+        margin-left: 48px;
+    }
+
+    .bot h2 {
+        margin-top: 48px;
+    }
+
+    button {
+        margin-left: 48px;
+        margin-right: 48px;
+        margin-bottom: 48px;
     }
 }
