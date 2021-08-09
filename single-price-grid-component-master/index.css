@@ -20,12 +20,6 @@ The designs were created to the following widths:
 - Light Gray: hsl(204, 43%, 93%)
 - Grayish Blue: hsl(218, 22%, 67%)
 
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
 ### Font
 
 - Family: [Karla](https://fonts.google.com/specimen/Karla)
@@ -42,11 +36,68 @@ The designs were created to the following widths:
     src: url(../sharedfonts/Karla/static/Karla-Bold.ttf)
 }
 
+
 body {
-    font-family: 'Karla'
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    background: hsl(218, 22%, 67%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin: 0;
 }
 
 footer {
     position: fixed;
     bottom: 15px;
+}
+
+main {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background: white;
+}
+
+.bot {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.left {
+ background: hsl(179, 62%, 43%);
+}
+
+.right {
+ background: hsl(179, 62%, 49%);
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        width: 1440px;
+    }
+
+    .bot {
+        flex-direction: row;
+    }
 }
