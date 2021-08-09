@@ -107,6 +107,17 @@ h2 {
 button{
     color: hsl(204, 43%, 93%);
     background: hsl(71, 73%, 54%);
+    margin-left: 24px;
+    margin-bottom: 24px; 
+    margin-right: 24px;
+    border: none;
+    padding: 24px 0;
+    border-radius: 8px;
+}
+
+.bot h2 {
+    color: hsl(204, 43%, 93%);
+    margin-top: 32px;
 }
 
 .top span {
@@ -114,6 +125,27 @@ button{
     margin-left: 24px;
     margin-right: 24px;
     line-height: 24px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 32px;
+    margin-block-start:0;
+    margin-block-end: 0;
+    margin-right: 12px;
+    color: hsl(204, 43%, 93%);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    color: hsl(200, 36%, 84%);
+    margin-bottom: 12px !important;
+}
+
+.bot span {
+    margin-left: 24px;
     margin-bottom: 32px;
 }
 
