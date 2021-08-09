@@ -71,13 +71,13 @@ section {
 }
 
 .top {
-    background: white;
+    background: hsl(204, 43%, 93%);;
 }
 
 .bot {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: hsl(204, 43%, 93%);;
 }
 
 .left {
@@ -90,6 +90,19 @@ section {
 
 h1 {
     color: hsl(179, 62%, 43%);
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+button{
+    color: hsl(204, 43%, 93%);
+    background: hsl(71, 73%, 54%);
+}
+
+.top span {
+    color: hsl(218, 22%, 67%)
 }
 
 @media only screen and (min-width: 800px) {
