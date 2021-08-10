@@ -1,8 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+$Blue: hsl(223, 87%, 63%) 
+$PaleBlue: hsl(223, 100%, 88%)
+$Gray: hsl(0, 0%, 59%)
+$VeryDarkBlue: hsl(209, 33%, 12%)
+
 @font-face 
     font-family: 'Libre Franklin'
     src: url(../../../sharedfonts/Libre_Franklin/static/LibreFranklin-Regular.ttf)
 
-html
+body
+    height: 100%
+    width: 100%
+    position: absolute
     font-family: 'Libre Franklin'
+    display: flex
+    flex-direction: center
+    align-items: center
+    background: #222
+    font-size: 20px
+
+main 
+    width: 375px
+
+
+@media only screen and (min-width: 800px)
+    body
+        background: #ccc
+    main
+        width: 1440px

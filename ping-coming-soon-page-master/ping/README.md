@@ -30,3 +30,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## running the built project - 
 
 in vs code - use http-server (liveserver doesn't work for some reason) to test.
+
+to deploy for github pages
+
+ng build --base-href ./
+
+or change the <base> element to point to ./ on the server
+
