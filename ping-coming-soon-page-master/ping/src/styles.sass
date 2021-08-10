@@ -8,7 +8,11 @@ $VeryDarkBlue: hsl(209, 33%, 12%)
 
 @font-face 
     font-family: 'Libre Franklin'
-    src: url(../../../sharedfonts/Libre_Franklin/static/LibreFranklin-Regular.ttf)
+    src: url(../../../sharedfonts/Libre_Franklin/static/LibreFranklin-Thin.ttf)
+
+@font-face 
+    font-family: 'Libre Franklin Bold'
+    src: url(../../../sharedfonts/Libre_Franklin/static/LibreFranklin-Bold.ttf)
 
 
 @mixin centered
@@ -38,11 +42,74 @@ main
 .large 
     width: 325px
     height: auto
+    margin-bottom: 80px
 
 .logo
-    width: 90px
+    width: 80px
     height: auto
+    margin-top: 80px
+    margin-bottom: 40px
 
+.icons 
+    margin-bottom: 20px 
+
+.icons i
+    color: $Blue
+    padding: 10px
+    border: 1px solid #ccc
+    border-radius: 50px
+    margin: 10px
+
+.icons i.fa-facebook-f
+    padding: 10px 14px
+
+.icons i.fa-instagram
+    padding: 10px 12px
+
+footer
+    justify-self: flex-end 
+    margin-bottom: 20px
+    color: $Gray
+    font-size: 12px
+
+h2 
+    color: $Gray
+    font-weight: 100
+    font-size: 24px
+    margin-bottom: 20px
+
+h2 span 
+    color: $VeryDarkBlue
+    font-weight: 700
+    font-family: "Libre Franklin Bold"
+    font-size: 24px
+
+.mini
+    font-size: 14px
+    margin-bottom: 30px
+
+.form 
+    @include centered-col
+    margin-bottom: 60px
+
+.form input 
+    width: 250px
+    margin-bottom: 12px
+    border-radius: 25px 
+    border: 1px solid $PaleBlue
+    padding: 12px 24px
+    display: flex
+
+.form button 
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+    text-align: center 
+    padding: 12px 24px 
+    border-radius: 25px
+    background: $Blue
+    color: white
+    border: none
 
 @media only screen and (min-width: 800px)
     body
