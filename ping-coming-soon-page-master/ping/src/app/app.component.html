@@ -7,7 +7,7 @@
     <input [class]="error ?'inputE' : ''" placeholder="Your email address" />
     <span *ngIf="error" class="errorS">Please provide a valid email address</span>
   </div>
-    <button (click)="toggleError()">Notify Me</button>
+    <button (click)="toggleError()" [class]="error ? 'errorBut' : ''">Notify Me</button>
   </div>
   <!-- large image -->
   <img alt="large" src="./assets/illustration-dashboard.png" class="large"/>
