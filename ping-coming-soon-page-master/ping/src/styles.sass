@@ -66,6 +66,10 @@ main
 .icons i.fa-instagram
     padding: 10px 12px
 
+.icons i.activeI
+    color: white
+    background: $Blue
+
 footer
     justify-self: flex-end 
     margin-bottom: 20px
@@ -94,11 +98,13 @@ h2 span
 
 .form input 
     width: 250px
-    margin-bottom: 12px
     border-radius: 25px 
     border: 1px solid $PaleBlue
     padding: 12px 24px
     display: flex
+
+.form input.inputE
+    border: 1px solid red
 
 .form button 
     width: 100%
@@ -110,6 +116,17 @@ h2 span
     background: $Blue
     color: white
     border: none
+
+.form input::placeholder
+    color: #ccc
+
+.inputC 
+    margin-bottom: 12px
+
+.errorS 
+    color: red
+    font-size: 12px
+    margin-left: 24px
 
 @media only screen and (min-width: 800px)
     body
