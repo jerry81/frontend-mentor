@@ -9,12 +9,6 @@
 - Desaturated blue: hsl(224, 23%, 55%)
 - Dark blue: hsl(223, 47%, 23%)
 
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
 */
 
 @font-face {
@@ -36,7 +30,8 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  font-family: 'Red Hot'
+  font-family: 'Red Hot';
+  font-size: 16px;
 }
 
 main {
@@ -81,6 +76,46 @@ h1 {
 .desc {
     display: block;
     width: 300px;
+    color: #777;
+}
+
+.annual {
+    display: flex;
+    background: hsl(225, 100%, 98%);
+    align-items: center;
+    padding: 15px 5px;
+    width: calc(100% - 30px);
+    justify-content: space-between;
+}
+
+.annual .l {
+    display: flex;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.music {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.price .bold {
+  font-family: 'Red Hot B';
+  font-weight: 900;
+}
+
+.price span {
+    color: #777;
+}
+
+.link {
+    margin-right: 10px;
+    color: hsl(223, 47%, 23%);
+    text-decoration: underline;
+    font-family: 'Red Hot B';
 }
 
 /* desktop */
