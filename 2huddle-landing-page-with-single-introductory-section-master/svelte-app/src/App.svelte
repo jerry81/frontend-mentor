@@ -2,4 +2,18 @@
 	let name = 'world';
 </script>
 
-<h1>Hello {name}!</h1>
+<main>
+  <div>
+    {name}
+  </div>
+</main>
+
+<style>
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../../sharedfonts/Poppins-Medium.ttf')
+}
+main {
+  font-family: 'Poppins';	
+}
+</style>
